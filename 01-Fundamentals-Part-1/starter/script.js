@@ -72,6 +72,8 @@ console.log(typeof javascriptIsFun);
 //     console.log(`${firstName} is too young, wait for ${18-age} years`)
 // }
 
+/*
+
 // *************Type Conversion************
 const inputYear="1991";
 console.log(inputYear+18);//output=199118 this is string
@@ -93,3 +95,48 @@ let n='1'+1;//n=11 as string
 n-=1 //n='11'-1;
 console.log(n)
 
+*/
+
+/*
+
+//Five Falsy Value in JS
+// 0,"",Undefined,null,NaN
+console.log(Boolean(0));
+console.log(Boolean({}));
+console.log(Boolean(undefined));
+console.log(Boolean(NaN));
+ 
+let money =0;
+if(money){
+    console.log(`Don't Spend it all`); 
+}else{
+    console.log('You should get a job');
+}
+
+let height=0;
+if(height){
+    console.log(`Height is ${height}`);
+}else{
+    console.log('Height is not defined');
+}
+*/
+
+//Equality Operators
+
+const age='18';
+if(age===18) console.log('You just became an adult :D (Strict)');
+if(age==18) console.log('You just became an adult :D (lose)');
+
+
+//Take input from user by promt function
+const favoriteNumber=Number(prompt('Input Your Favorite Number'));
+console.log(favoriteNumber);
+console.log(typeof favoriteNumber);
+if(favoriteNumber===23){
+    console.log('Your input number is 23');
+}else if(favoriteNumber===7){
+    console.log('Your input number is 7'); 
+}else{
+    console.log('Input Number dose not match storage Number')
+}
+if(favoriteNumber!==23) console.log('Why not input 23?')
