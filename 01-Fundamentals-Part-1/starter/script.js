@@ -64,10 +64,32 @@ console.log(typeof javascriptIsFun);
 // line`);
 
 // ***********************if else Statement**********************************
-const firstName='Rajib';
-const age =15;
-if(age>=18){
-    console.log(`${firstName} can start driving license`)
-}else{
-    console.log(`${firstName} is too young, wait for ${18-age} years`)
-}
+// const firstName='Rajib';
+// const age =15;
+// if(age>=18){
+//     console.log(`${firstName} can start driving license`)
+// }else{
+//     console.log(`${firstName} is too young, wait for ${18-age} years`)
+// }
+
+// *************Type Conversion************
+const inputYear="1991";
+console.log(inputYear+18);//output=199118 this is string
+console.log(Number(inputYear)+18); //here firstly convert string(1991) to number by the Number() function than addition operator works.and given output=2009 as a number
+console.log(Number('rajib')); //output = NaN; that means 'rajib' not a number;
+console.log(typeof NaN); //output = number; actually NaN is a Invalid Number
+console.log(String(23),23); //String() function convert Number to String;
+
+// ***********Type Coercion**************
+
+console.log('I am '+ 24+ ' Years Old'); //Here 23 number automatically convert to string ---the + operator forced 23 to convert to string
+console.log('23'-'10'-3); //output= 10; because here String(23 & 10) automatically convert to Number ----the (-)Operator force to convert string to number
+console.log('15'*'2'); //output=30;
+console.log('14'/2) //output =7;
+console.log('145'>25); //output=true;
+
+
+let n='1'+1;//n=11 as string
+n-=1 //n='11'-1;
+console.log(n)
+
