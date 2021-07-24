@@ -7,10 +7,9 @@ let marksBMI=marksWeight/(marksHeight*marksHeight);
 let johnsBMI=marksWeight/(johnsHeight*johnsHeight);
 
 let markHigherBMI=marksBMI>johnsBMI;
-console.log( 'Marks BMI = '+marksBMI);
-console.log('Johns BMI = '+johnsBMI);
-if(markHigherBMI==true){
-    console.log('Mark has a higher BMI than John.');
+
+if(markHigherBMI){
+    console.log(`Mark BMI (${marksBMI}) higher than John BMI (${johnsBMI}).`);
 }else{
-    console.log('John has a higher BMI than Mark.');
+    console.log(`John BMI (${johnsBMI}) higher than Mark BMI (${marksBMI}).`);
 }
