@@ -121,6 +121,7 @@ if(height){
 }
 */
 
+/*
 //Equality Operators
 
 const age='18';
@@ -140,3 +141,47 @@ if(favoriteNumber===23){
     console.log('Input Number dose not match storage Number')
 }
 if(favoriteNumber!==23) console.log('Why not input 23?')
+
+*/
+// const isDrivingLicense=true;
+// const isGoodVision=true;
+// const isTired=false;
+
+// console.log(isDrivingLicense||isGoodVision||isTired);
+// console.log(isDrivingLicense&&isGoodVision&&isTired);
+
+// if(isDrivingLicense&&isGoodVision&& !isTired){
+//     console.log('Rajib is able to drive');
+// }else{
+//     console.log('someone else should drive....');
+// }
+
+//**************** */ Cooding Challenge-2***************
+
+let dolphinScore=[97,112,101];
+let koalaScore=[109,95,106];
+
+let sumDol=0;
+let sumKol=0;
+let resultDolphin;
+let resultKoala;
+for(let i=0;i<dolphinScore.length;i++){
+    resultDolphin=sumDol+=dolphinScore[i];  
+}
+for(let j=0;j<koalaScore.length;j++){
+    resultKoala=sumKol+=koalaScore[j];  
+}
+const dolphinAvarageScore=resultDolphin/3;
+const koalaAvarageScore=resultKoala/3;
+console.log(dolphinAvarageScore);
+console.log(koalaAvarageScore);
+
+if(dolphinAvarageScore>koalaAvarageScore&&dolphinAvarageScore>=100){
+    console.log('Dolphins Team Winner');
+}else if(koalaAvarageScore>dolphinAvarageScore&&koalaAvarageScore>=100){
+    console.log('Koalas Team Winner');
+}else if(dolphinAvarageScore===koalaAvarageScore&&dolphinAvarageScore>=100&&koalaAvarageScore>=100){
+    console.log('Draw the game');
+}else{
+    console.log('No one Won the Troffy');
+}
