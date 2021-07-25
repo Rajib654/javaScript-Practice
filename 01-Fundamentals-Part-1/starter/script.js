@@ -232,10 +232,16 @@ if(favoriteNumber!==23) console.log('Why not input 23?')
 
 // ****************Conditional/Ternary Operator***************
 
-const age =15;
-age>=18 ? console.log('You able to drink wine') : console.log('You able to drink water');
+// const age =15;
+// age>=18 ? console.log('You able to drink wine') : console.log('You able to drink water');
 
-const drink=age>=18 ? 'wine' : 'Water';
-console.log(drink);
+// const drink=age>=18 ? 'wine' : 'Water';
+// console.log(drink);
 
-console.log(`I like to drink ${age>=18 ? 'wine' : 'Water'}`);
+// console.log(`I like to drink ${age>=18 ? 'wine' : 'Water'}`);
+
+// ***********Cooding Challenge-4****************
+const bill =350;
+const tip = bill>=50 &&bill<=300 ? (15/100) : (20/100);
+const totalBill=bill+(bill*tip);
+console.log('Total Bill= '+ totalBill);
