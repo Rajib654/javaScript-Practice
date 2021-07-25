@@ -158,30 +158,84 @@ if(favoriteNumber!==23) console.log('Why not input 23?')
 
 //**************** */ Cooding Challenge-2***************
 
-let dolphinScore=[97,112,101];
-let koalaScore=[109,95,106];
+// let dolphinScore=[97,112,101];
+// let koalaScore=[109,95,106];
 
-let sumDol=0;
-let sumKol=0;
-let resultDolphin;
-let resultKoala;
-for(let i=0;i<dolphinScore.length;i++){
-    resultDolphin=sumDol+=dolphinScore[i];  
-}
-for(let j=0;j<koalaScore.length;j++){
-    resultKoala=sumKol+=koalaScore[j];  
-}
-const dolphinAvarageScore=resultDolphin/3;
-const koalaAvarageScore=resultKoala/3;
-console.log(dolphinAvarageScore);
-console.log(koalaAvarageScore);
+// let sumDol=0;
+// let sumKol=0;
+// let resultDolphin;
+// let resultKoala;
+// for(let i=0;i<dolphinScore.length;i++){
+//     resultDolphin=sumDol+=dolphinScore[i];  
+// }
+// for(let j=0;j<koalaScore.length;j++){
+//     resultKoala=sumKol+=koalaScore[j];  
+// }
+// const dolphinAvarageScore=resultDolphin/3;
+// const koalaAvarageScore=resultKoala/3;
+// console.log(dolphinAvarageScore);
+// console.log(koalaAvarageScore);
 
-if(dolphinAvarageScore>koalaAvarageScore&&dolphinAvarageScore>=100){
-    console.log('Dolphins Team Winner');
-}else if(koalaAvarageScore>dolphinAvarageScore&&koalaAvarageScore>=100){
-    console.log('Koalas Team Winner');
-}else if(dolphinAvarageScore===koalaAvarageScore&&dolphinAvarageScore>=100&&koalaAvarageScore>=100){
-    console.log('Draw the game');
-}else{
-    console.log('No one Won the Troffy');
-}
+// if(dolphinAvarageScore>koalaAvarageScore&&dolphinAvarageScore>=100){
+//     console.log('Dolphins Team Winner');
+// }else if(koalaAvarageScore>dolphinAvarageScore&&koalaAvarageScore>=100){
+//     console.log('Koalas Team Winner');
+// }else if(dolphinAvarageScore===koalaAvarageScore&&dolphinAvarageScore>=100&&koalaAvarageScore>=100){
+//     console.log('Draw the game');
+// }else{
+//     console.log('No one Won the Troffy');
+// }
+
+
+// const day='thusday';
+// if(day==='monday'){
+//     console.log('Plan course structure');
+//     console.log('Go to coding meetup');
+// }else if(day==='tuesday'){
+//     console.log('Prepare theury vedios');
+// }else if(day==='wednesday'||day==='thusday'){
+//     console.log('Write code example');
+// }else if(day==='friday'){
+//     console.log('Record vedios');
+// }else if(day==='saturday'||day==='sunday'){
+//     console.log('Enjoy the weekend');
+// }else{
+//     console.log('Not a valid day')
+// }
+
+// ***********Switch Statement****************************
+
+
+// const day = prompt('Input your Favorite Number');
+// switch (day){
+//     case '1':
+//         console.log('Plan course structure');
+//         console.log('Go to coding meetup');
+//         break;
+//     case '2':
+//         console.log('Prepare theury vedios');
+//         break;
+//     case '3':
+//     case '4': 
+//         console.log('Write code example');
+//         break;
+//     case '5':
+//         console.log('Record vedios');
+//         break;
+//     case '6':
+//     case '7':
+//         console.log('Enjoy the weekend');
+//         break;
+//     default:
+//         console.log('Not a valid day');
+// }
+
+// ****************Conditional/Ternary Operator***************
+
+const age =15;
+age>=18 ? console.log('You able to drink wine') : console.log('You able to drink water');
+
+const drink=age>=18 ? 'wine' : 'Water';
+console.log(drink);
+
+console.log(`I like to drink ${age>=18 ? 'wine' : 'Water'}`);
