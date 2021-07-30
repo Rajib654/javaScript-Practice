@@ -225,5 +225,74 @@ if(mark.calcBMI()>john.calcBMI()){
     console.log(`${john.fullName} BMI (${john.calcBMI()}) Higher than ${mark.fullName} (${mark.calcBMI()})`);
 }
 */
+// const rajib=['Rajib','Hossain',1996,['ujjal','Ezharul','Zonayed'],true];
+// for(let i=0;i<rajib.length;i++){
+//     if(typeof rajib[i]!== 'string') continue;
+//     console.log(rajib[i],typeof rajib[i]);
+// }
+
+// console.log('**********Break************');
+
+// for(let i=0;i<rajib.length;i++){
+//     if(typeof rajib[i]=== 'number') break;
+//     console.log(rajib[i],typeof rajib[i]);
+// }
+
+// const years =[1991,2002,1996,1895];
+// const age=[];
+// for(let i=0;i<years.length;i++){
+//     const calcAge=2037-years[i];
+//     age.push(calcAge);
+// }
+// console.log(age);
+
+//Reverse Looping
+// const rajib=['Rajib','Hossain',1996,['ujjal','Ezharul','Zonayed'],true];
+// for (let i=rajib.length-1;i>=0;i--){
+//     console.log(rajib[i]);
+// }
 
 
+// for(let i=1;i<4;i++){
+//     console.log(`-------------Outer ${i}`);
+//     for(let j=1;j<6;j++){
+//         console.log(`inner ${j}`);
+//     }
+// }
+
+// let dice = Math.round(Math.random() * 5 + 1);
+// // console.log(dice);
+// while (dice !== 6) {
+//     console.log(`Your Random ${dice}`);
+//     dice = Math.round(Math.random() * 5 + 1);
+//     if(dice===6) console.log(`Your Random Number ${dice} & Loops Become stop`)
+// }
+
+//=======Coding Challenge (Final)============
+const bills=[22,295,176,440,37,105,10,1100,86,52];
+const tips=[];
+const totals=[];
+const calcTip=function(bill){
+    if(bill>50&&bill<300){
+        return bill*0.15;
+    }else{
+        return bill*0.2;
+    }
+}
+let individualBill;
+for(let i=0;i<bills.length;i++){
+       let tip=calcTip(bills[i])
+       tips.push(tip);
+       totals.push(tip+bills[i])
+}
+console.log(tips);
+console.log(totals);
+let sum=0;
+for(let j=0;j<totals.length;j++){
+   sum+=totals[j]
+}
+// console.log(sum,totals.length);
+const calcAvg=function(arr){
+    return sum/arr.length;
+}
+console.log(calcAvg(totals));
